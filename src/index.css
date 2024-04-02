@@ -6,3 +6,11 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
+
+.hamburger-list {
+  @apply p-3 text-primary hover:rounded-full hover:bg-primary hover:px-32 hover:text-white hover:opacity-80;
+}
+
+.h1-hero {
+  @apply text-center text-lg font-bold text-slate-700 sm:text-2xl md:text-left lg:text-left lg:text-4xl xl:text-left xl:text-5xl;
+}

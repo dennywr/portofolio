@@ -1,4 +1,5 @@
 import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   // #EADFB4
@@ -7,6 +8,7 @@ function App() {
   // #F6995C
   return (
     <>
+      <Navbar />
       <Hero />
     </>
   );
