@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="container mx-auto mt-9 items-center">
       {/* isOpen === false */}
       <div className="flex items-center justify-between">
-        <div className="text-3xl font-bold text-slate-700">
+        <div className="text-2xl font-bold text-slate-700">
           Denny<span className="text-primary">wr.</span>
         </div>
         <ul className="hidden justify-between font-semibold md:flex md:gap-10">
