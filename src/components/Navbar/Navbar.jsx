@@ -12,15 +12,10 @@ export default function Navbar() {
           Denny<span className="text-primary">wr.</span>
         </div>
         <ul className="hidden justify-between font-semibold md:flex md:gap-10">
-          <li className="cursor-pointer text-primary duration-200 ease-in-out hover:text-slate-700 hover:underline hover:underline-offset-8">
-            About
-          </li>
-          <li className="cursor-pointer text-primary duration-200 ease-in-out hover:text-slate-700 hover:underline hover:underline-offset-8">
-            Project
-          </li>
-          <li className="cursor-pointer text-primary duration-200 ease-in-out hover:text-slate-700 hover:underline hover:underline-offset-8">
-            Contact
-          </li>
+          <li className="nav-list">About</li>
+          <li className="nav-list">Skill</li>
+          <li className="nav-list">Project</li>
+          <li className="nav-list">Contact</li>
         </ul>
         <button className="hidden md:inline-block">
           <CiCloudMoon size={35} />
@@ -39,6 +34,9 @@ export default function Navbar() {
       >
         <Link className="hamburger-list" to="#about">
           About
+        </Link>
+        <Link className="hamburger-list" to="#skill">
+          Skill
         </Link>
         <Link className="hamburger-list" to="#project">
           Project

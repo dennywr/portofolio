@@ -1,6 +1,7 @@
 import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Skill from "./components/Skill/Skill";
 
 function App() {
   // #EADFB4
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skill />
     </>
   );
 }

@@ -11,6 +11,10 @@
   @apply p-3 text-primary hover:rounded-full hover:bg-primary hover:px-32 hover:text-white hover:opacity-80;
 }
 
+.nav-list {
+  @apply cursor-pointer text-primary duration-200 ease-in-out hover:text-slate-700 hover:underline hover:underline-offset-8;
+}
+
 .h1-hero {
   @apply text-center text-lg font-bold text-slate-700 sm:text-2xl md:text-left lg:text-left lg:text-4xl xl:text-left xl:text-5xl;
 }
