@@ -1,6 +1,7 @@
 import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Project from "./components/Project/Project";
 import Skill from "./components/Skill/Skill";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About />
       <Skill />
+      <Project />
     </>
   );
 }
