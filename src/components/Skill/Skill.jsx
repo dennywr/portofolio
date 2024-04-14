@@ -2,7 +2,7 @@ import { IconContext } from "react-icons";
 import { SiTailwindcss, SiReact, SiBootstrap, SiRedux } from "react-icons/si";
 export default function Skill() {
   return (
-    <section className="container mx-auto">
+    <section id="skill" className="container mx-auto">
       <div className="container flex h-screen flex-col items-center justify-center  md:flex-row md:justify-between">
         <div className="w-1/2 space-y-3 text-center font-bold text-slate-700 md:text-left">
           <h1 className="text-xl text-primary lg:text-2xl xl:text-3xl">

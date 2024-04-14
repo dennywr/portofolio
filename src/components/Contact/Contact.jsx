@@ -5,10 +5,15 @@ import TextInput from "../TextInput/TextInput";
 export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Sorry, this feature is not working now. Please try again later :)");
+    alert(
+      "Sorry, this feature is not working for now. Please try again later :)",
+    );
   };
   return (
-    <section className="container mx-auto flex h-screen items-center justify-center">
+    <section
+      id="contact"
+      className="container mx-auto flex h-screen items-center justify-center"
+    >
       <div className="container space-y-5  lg:flex lg:justify-around lg:space-y-0">
         <div className="lg:w-1/3">
           <h1 className="text-2xl font-bold text-primary lg:text-4xl">

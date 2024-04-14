@@ -34,13 +34,13 @@ export default function Hero() {
               className: "text-xl md:text-2xl lg:text-3xl xl:text-4xl",
             }}
           >
-            <Socmed url="#">
+            <Socmed url="https://www.instagram.com/dennnywr">
               <FaInstagram />
             </Socmed>
             <Socmed url="#">
               <FaLinkedin />
             </Socmed>
-            <Socmed url="#">
+            <Socmed url="https://github.com/dennywr/">
               <FaGithub />
             </Socmed>
           </IconContext.Provider>

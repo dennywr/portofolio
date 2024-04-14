@@ -17,8 +17,8 @@ const templateDataProject = [
 
 export default function Project() {
   return (
-    <section className="mx-auto w-screen bg-primary/[.06]">
-      <div className="container mx-auto py-10">
+    <section id="project" className="mx-auto bg-primary/[.06]">
+      <div className="container mx-auto py-20">
         <div className="container mb-8">
           <h1 className="text-xl font-bold text-primary lg:text-3xl">
             Project
