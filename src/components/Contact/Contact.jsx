@@ -1,18 +1,38 @@
+import { useRef } from "react";
 import Button from "../Button/Button";
 import TextArea from "../TextArea/TextArea";
 import TextInput from "../TextInput/TextInput";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const SERVICE_ID = import.meta.env.VITE_APP_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_APP_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_APP_PUBLIC_KEY;
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    alert(
-      "Sorry, this feature is not working for now. Please try again later :)",
-    );
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+        publicKey: PUBLIC_KEY,
+      })
+      .then(
+        () => {
+          alert("SUCCESS!");
+        },
+        (error) => {
+          alert("FAILED...", error.text);
+        },
+      );
+
+    form.current.reset();
   };
   return (
     <section
       id="contact"
-      className="container mx-auto flex h-screen items-center justify-center"
+      className="container mx-auto mb-20 flex h-screen items-center justify-center lg:mb-10"
     >
       <div className="container space-y-5  lg:flex lg:justify-around lg:space-y-0">
         <div className="lg:w-1/3">
@@ -24,7 +44,8 @@ export default function Contact() {
           </p>
         </div>
         <form
-          onSubmit={handleSubmit}
+          ref={form}
+          onSubmit={sendEmail}
           className="flex flex-col space-y-4 lg:w-1/2"
         >
           <TextInput label="Name" type="text" name="name" />

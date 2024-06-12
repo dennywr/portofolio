@@ -10,8 +10,8 @@ import {
 
 export default function Hero() {
   return (
-    <main className="container relative mx-auto mt-24 md:flex md:justify-between">
-      <div className="absolute left-24 top-0 -z-10 h-32 w-32 rounded-full bg-primary blur-3xl"></div>
+    <main className="container relative mx-auto mt-7 md:flex md:justify-between xl:h-screen">
+      <div className="absolute left-24 top-0 -z-10 w-32 rounded-full bg-primary blur-3xl"></div>
 
       <div className="container mx-auto sm:space-y-1 md:mt-12 lg:space-y-3 xl:space-y-5">
         <h3 className="text-center text-sm font-bold text-slate-700 sm:text-xl md:text-left lg:text-left lg:text-3xl xl:text-left xl:text-4xl">

@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="mt-44 flex bg-primary/[.06] py-36 text-center md:h-screen md:items-center md:justify-center"
+      className="flex bg-primary/[.06] text-center md:h-screen md:items-center md:justify-center"
     >
       <div className="container mx-auto md:flex md:justify-between">
         <div className="mx-auto mb-2 w-1/2 md:w-3/4">
